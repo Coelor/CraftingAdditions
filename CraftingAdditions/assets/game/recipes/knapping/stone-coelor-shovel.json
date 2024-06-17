@@ -1,0 +1,17 @@
+{
+	"ingredient": { "type": "item", "code": "stone-*", "name": "rock", "allowedVariants": ["granite", "andesite", "basalt", "obsidian", "flint", "peridotite"] },
+	"pattern": [[
+		"_###__###_",
+		"_###__###_",
+		"__##__##__",
+		"####__####",
+		"##########",
+		"##########",
+		"##########",
+		"_########_",
+		"__######__",
+		"___####___"
+	]],
+	"name": "1 Stone shovel",
+	"output": { "type": "item", "code": "shovelhead-{rock}"  }
+}

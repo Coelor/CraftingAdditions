@@ -1,0 +1,17 @@
+{
+	"ingredient": { "type": "item", "code": "stone-*", "name": "rock", "allowedVariants": ["granite", "andesite", "basalt", "obsidian", "flint", "peridotite"] },
+	"pattern": [[
+		"###_______",
+		"###_######",
+		"###_######",
+		"###_######",
+		"####_#####",
+		"#####_####",
+		"######_###",
+		"######_###",
+		"######_###",
+		"_______###"
+	]],
+	"name": "2 Stone hatchet",
+	"output": { "type": "item", "code": "axehead-{rock}", "stacksize": 2  }
+}

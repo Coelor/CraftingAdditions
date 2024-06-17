@@ -1,0 +1,13 @@
+{
+    "type": "code",
+    "modid": "craftingadditions",
+    "name": "CraftingAdditions",
+    "authors": [
+        "Coelor"
+    ],
+    "description": "Testing out things",
+    "version": "0.0.1",
+    "dependencies": {
+        "game": ""
+    }
+}

@@ -1,0 +1,17 @@
+{
+	"ingredient": { "type": "item", "code": "stone-*", "name": "rock", "allowedVariants": ["granite", "andesite", "basalt", "obsidian", "flint", "peridotite"] },
+	"pattern": [[
+		"___##_####",
+		"__##_#####",
+		"_##__#####",
+		"##___#####",
+		"##___#####",
+		"#####___##",
+		"#####___##",
+		"#####__##_",
+		"#####_##__",
+		"####_##___"
+	]],
+	"name": "2 Hoe",
+	"output": { "type": "item", "code": "hoehead-{rock}", "stacksize": 2 }
+}

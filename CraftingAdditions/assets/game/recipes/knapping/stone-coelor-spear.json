@@ -1,0 +1,17 @@
+{
+	"ingredient": { "type": "item", "code": "stone-*", "name": "rock", "allowedVariants": ["granite", "andesite", "basalt", "obsidian", "flint", "peridotite"] },
+	"pattern": [[
+		"__#___###_",
+		"__#__#####",
+		"_###_#####",
+		"_###_#####",
+		"_###_#####",
+		"#####_###_",
+		"#####_###_",
+		"#####_###_",
+		"#####__#__",
+		"_###___#__"
+	]],
+	"name": "2 Stone spear",
+	"output": { "type": "item", "code": "spearhead-{rock}", "stacksize": 2  }
+}
