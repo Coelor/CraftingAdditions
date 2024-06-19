@@ -1276,18 +1276,23 @@ namespace CraftingAdditions
             List<SmithingRecipe> recipes = Api.GetSmithingRecipes()
                 .Where(r => r.Ingredient.SatisfiesAsIngredient(ingredient))
                 .OrderBy(r => r.Output.ResolvedItemstack.Collectible.Code) // Cannot sort by name, thats language dependent!
-                .ToList()
-            ;
+                .ToList();
+            
+            foreach(SmithingRecipe recipe in recipes)
+            {
+                Console.Write("Recipes:" + recipe);
+            }
 
             List<ItemStack> stacks = recipes
                 .Select(r => r.Output.ResolvedItemstack)
-                .ToList()
-            ;
+                .ToList();
 
+            Console.Write(stacks);
+            
             IClientWorldAccessor clientWorld = (IClientWorldAccessor)Api.World;
             ICoreClientAPI capi = Api as ICoreClientAPI;
             
-            GuiDialog dlg = new GuiDialogBlockEntityRecipeSelector(
+            GuiDialog dlg = new AnvilNewBlockEntityRecipeSelector(
                 Lang.Get("Select smithing recipe"),
                 stacks.ToArray(),
                 (selectedIndex) => {
@@ -1313,7 +1318,6 @@ namespace CraftingAdditions
             }
 
             float temperature = workItemStack.Collectible.GetTemperature(Api.World, workItemStack);
-
 
             dsc.AppendLine(Lang.Get("Output: {0}", SelectedRecipe.Output?.ResolvedItemstack?.GetName()));
             //dsc.AppendLine(Lang.Get("Available Voxels: {0}", AvailableMetalVoxels));
