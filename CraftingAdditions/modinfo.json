@@ -5,8 +5,8 @@
     "authors": [
         "Coelor"
     ],
-    "description": "Testing out things",
-    "version": "0.0.1",
+    "description": "Expands the anvil recipe selector GUI from 7 to 14 columns for improved visibility and easier recipe browsing.",
+    "version": "1.0.0",
     "dependencies": {
         "game": ""
     }
